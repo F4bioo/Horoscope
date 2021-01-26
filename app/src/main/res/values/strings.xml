@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Horoscope</string>
+
+    <string name="text_aries">Aries</string>
+    <string name="text_taurus">Taurus</string>
+    <string name="text_gemini">Gemini</string>
+    <string name="text_cancer">Cancer</string>
+    <string name="text_leo">Leo</string>
+    <string name="text_virgo">Virgo</string>
+    <string name="text_libra">Libra</string>
+    <string name="text_scorpio">Scorpio</string>
+    <string name="text_sagittarius">Sagittarius</string>
+    <string name="text_capricorn">Capricorn</string>
+    <string name="text_aquarius">Aquarius</string>
+    <string name="text_pisces">Pisces</string>
+    <string name="text_url_origin">url origin</string>
+
 </resources>
