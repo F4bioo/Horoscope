@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    tools:context=".ui.DetailsActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_main2"
+        android:src="@drawable/bg_details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#B3000000"
+        android:background="@drawable/scrim"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +62,11 @@
                 android:id="@+id/text_daily"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id aliquam metus. Praesent convallis, ex eu porttitor ultricies, velit nisi commodo ante, nec vulputate ipsum dolor id ante. Sed mattis vestibulum tellus in rutrum. Mauris eget consectetur enim. Donec ac dui non dui accumsan luctus id nec erat." />
 
             <TextView
-                android:id="@+id/author"
+                android:id="@+id/text_author"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text_daily"
@@ -78,20 +78,25 @@
                 android:id="@+id/text_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/author"
+                android:layout_below="@+id/text_author"
                 android:textStyle="italic"
                 tools:text="Mon, 25 Jan 16:51" />
 
-            <ImageView
-                android:id="@+id/image_url_origin"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+            <TextView
+                android:id="@+id/text_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/text_date"
-                android:contentDescription="@string/text_url_origin"
-                android:padding="8dp"
-                android:src="@drawable/ic_link_24dp"
-                app:tint="#80FFEB3B" />
+                android:clickable="true"
+                android:drawablePadding="4dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_source"
+                android:textColor="#FFC107"
+                android:visibility="invisible"
+                app:drawableStartCompat="@drawable/ic_link_24dp"
+                app:drawableTint="#FFC107"
+                tools:visibility="visible" />
 
         </RelativeLayout>
 

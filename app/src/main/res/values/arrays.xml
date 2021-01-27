@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="set_sign_app">
+        <item>@string/text_aries</item>
+        <item>@string/text_taurus</item>
+        <item>@string/text_gemini</item>
+        <item>@string/text_cancer</item>
+        <item>@string/text_leo</item>
+        <item>@string/text_virgo</item>
+        <item>@string/text_libra</item>
+        <item>@string/text_scorpio</item>
+        <item>@string/text_sagittarius</item>
+        <item>@string/text_capricorn</item>
+        <item>@string/text_aquarius</item>
+        <item>@string/text_pisces</item>
+    </array>
+
+    <array name="get_sign_api">
+        <item>aries</item>
+        <item>touro</item>
+        <item>gemeos</item>
+        <item>cancer</item>
+        <item>leao</item>
+        <item>virgem</item>
+        <item>libra</item>
+        <item>escorpiao</item>
+        <item>sagitario</item>
+        <item>capricornio</item>
+        <item>aquario</item>
+        <item>peixes</item>
+    </array>
+
+</resources>

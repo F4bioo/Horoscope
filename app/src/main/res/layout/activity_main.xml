@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_main3"
+        android:src="@drawable/bg_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#80000000"
+        android:background="@drawable/scrim"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="@string/app_name"
         android:textSize="32sp"
@@ -42,9 +42,7 @@
         android:id="@+id/table_zodiac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="16dp"
-        android:paddingEnd="16dp"
+        android:layout_margin="16dp"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,10 +56,13 @@
             android:weightSum="1">
 
             <LinearLayout
+                android:id="@+id/aries"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -81,12 +82,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/taurus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -106,10 +110,13 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/gemini"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -138,10 +145,13 @@
             android:weightSum="1">
 
             <LinearLayout
+                android:id="@+id/cancer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -161,12 +171,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/leo"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -186,10 +199,13 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/virgo"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -218,10 +234,13 @@
             android:weightSum="1">
 
             <LinearLayout
+                android:id="@+id/libra"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -241,12 +260,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/scorpio"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -266,10 +288,13 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/sagittarius"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -298,10 +323,13 @@
             android:weightSum="1">
 
             <LinearLayout
+                android:id="@+id/capricorn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -321,12 +349,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/aquarius"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
@@ -346,10 +377,13 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/pisces"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="@color/bg_icon_zodiac"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 

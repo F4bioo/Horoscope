@@ -1,18 +1,21 @@
 <resources>
-    <string name="app_name">Horoscope</string>
+    <string name="app_name">Horóscopo</string>
 
-    <string name="text_aries">Aries</string>
-    <string name="text_taurus">Taurus</string>
-    <string name="text_gemini">Gemini</string>
-    <string name="text_cancer">Cancer</string>
-    <string name="text_leo">Leo</string>
-    <string name="text_virgo">Virgo</string>
+    <string name="text_aries">Áries</string>
+    <string name="text_taurus">Touro</string>
+    <string name="text_gemini">Gêmeos</string>
+    <string name="text_cancer">Câncer</string>
+    <string name="text_leo">Leão</string>
+    <string name="text_virgo">Virgem</string>
     <string name="text_libra">Libra</string>
-    <string name="text_scorpio">Scorpio</string>
-    <string name="text_sagittarius">Sagittarius</string>
-    <string name="text_capricorn">Capricorn</string>
-    <string name="text_aquarius">Aquarius</string>
-    <string name="text_pisces">Pisces</string>
-    <string name="text_url_origin">url origin</string>
+    <string name="text_scorpio">Escorpião</string>
+    <string name="text_sagittarius">Sagitário</string>
+    <string name="text_capricorn">Capricórnio</string>
+    <string name="text_aquarius">Aquário </string>
+    <string name="text_pisces">Peixes</string>
+
+    <string name="text_url_origin">Origem da URL</string>
+    <string name="text_source">Fonte</string>
+    <string name="text_no_internet_connection">Sem conexão com a internet!</string>
 
 </resources>
