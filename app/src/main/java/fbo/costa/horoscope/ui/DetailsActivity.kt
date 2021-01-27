@@ -1,5 +1,7 @@
 package fbo.costa.horoscope.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.view.View
 import android.widget.Toast
 import androidx.viewbinding.ViewBinding
@@ -61,12 +63,12 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
             textSign.text = singName
             textDaily.text = sign.text
             textAuthor.text = sign.author
-            textDate.text = sign.dataAccess?.date
+            textDate.text = sign.date
 
             textSource.visibility = View.VISIBLE
             textSource.setOnClickListener {
                 sign.urlOrigin?.let { _url ->
-                    presenter.onStartActivity(_url)
+                    startActivity(_url)
                 }
             }
         }
@@ -84,5 +86,10 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
         sign?.let { _sign ->
             presenter.onRequestSign(_sign)
         }
+    }
+
+    private fun startActivity(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 }

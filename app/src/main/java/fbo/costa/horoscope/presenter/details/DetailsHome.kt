@@ -8,15 +8,13 @@ interface DetailsHome {
 
         fun onRequestSign(sign: String)
 
-        fun onSuccess(dataResponse: SignApiEntity)
+        fun onSuccess(signApiEntity: SignApiEntity)
 
         fun onError(message: String)
 
         fun onBack(hasError: Boolean)
 
         fun onComplete()
-
-        fun onStartActivity(url: String)
 
     }
 }
