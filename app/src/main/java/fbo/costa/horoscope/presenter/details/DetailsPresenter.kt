@@ -12,7 +12,6 @@ import java.util.*
 import java.util.regex.Pattern
 
 class DetailsPresenter(
-    private val context: Context,
     private val view: ViewHome.View,
     private val dataSource: DataSource
 ) : DetailsHome.Presenter, EntityMapper<SignApiEntity, Sign> {
@@ -29,10 +28,6 @@ class DetailsPresenter(
 
     override fun onError(message: String) {
         this.view.showFailure(message)
-    }
-
-    override fun onBack(hasError: Boolean) {
-        if (hasError) this.view.returnAfterError()
     }
 
     override fun onComplete() {

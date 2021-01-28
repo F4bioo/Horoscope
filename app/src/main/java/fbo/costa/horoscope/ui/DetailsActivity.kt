@@ -3,7 +3,6 @@ package fbo.costa.horoscope.ui
 import android.content.Intent
 import android.net.Uri
 import android.view.View
-import android.widget.Toast
 import androidx.viewbinding.ViewBinding
 import fbo.costa.horoscope.R
 import fbo.costa.horoscope.data.model.Sign
@@ -28,8 +27,9 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
 
     override fun onInject() {
         val dataSource = DataSource(this)
-        presenter = DetailsPresenter(this, this, dataSource)
+        presenter = DetailsPresenter(this, dataSource)
         getExtras()
+        tryAgain()
     }
 
     override fun showProgress() {
@@ -37,14 +37,10 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
     }
 
     override fun showFailure(message: String) {
-        Toast.makeText(
-            this,
-            message, Toast.LENGTH_SHORT
-        ).show()
-    }
-
-    override fun returnAfterError() {
-        this.onBackPressed()
+        binding.apply {
+            textTryAgain.text = message
+            layoutTryAgain.visibility = View.VISIBLE
+        }
     }
 
     override fun hideProgress() {
@@ -91,5 +87,17 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
     private fun startActivity(url: String) {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         startActivity(intent)
+    }
+
+    private fun tryAgain() {
+        binding.apply {
+            buttonTryAgain.setOnClickListener {
+                layoutTryAgain.visibility = View.INVISIBLE
+
+                sign?.let { _sign ->
+                    presenter.onRequestSign(_sign)
+                }
+            }
+        }
     }
 }

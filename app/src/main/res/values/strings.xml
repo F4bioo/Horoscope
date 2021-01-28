@@ -17,5 +17,6 @@
     <string name="text_url_origin">Origem da URL</string>
     <string name="text_source">Fonte</string>
     <string name="text_no_internet_connection">Sem conexão com a internet!</string>
+    <string name="text_try_again">Tentar novamente</string>
 
 </resources>

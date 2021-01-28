@@ -12,8 +12,6 @@ interface DetailsHome {
 
         fun onError(message: String)
 
-        fun onBack(hasError: Boolean)
-
         fun onComplete()
 
     }

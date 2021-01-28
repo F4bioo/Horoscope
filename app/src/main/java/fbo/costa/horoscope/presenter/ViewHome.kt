@@ -10,8 +10,6 @@ interface ViewHome {
 
         fun showFailure(message: String)
 
-        fun returnAfterError()
-
         fun hideProgress()
 
         fun showSign(sign: Sign)
