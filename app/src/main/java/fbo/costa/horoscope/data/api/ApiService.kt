@@ -7,7 +7,7 @@ import retrofit2.http.Path
 
 interface ApiService {
 
-    @GET("/signo/{signo}/dia")
+    @GET("signo/{signo}/dia")
     suspend fun getSign(
         @Path("signo") sign: String
     ): Response<SignApiEntity>

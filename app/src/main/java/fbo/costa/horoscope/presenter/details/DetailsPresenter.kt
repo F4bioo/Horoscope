@@ -1,6 +1,5 @@
 package fbo.costa.horoscope.presenter.details
 
-import android.content.Context
 import fbo.costa.horoscope.data.model.Sign
 import fbo.costa.horoscope.data.model.SignApiEntity
 import fbo.costa.horoscope.presenter.ViewHome
@@ -32,6 +31,10 @@ class DetailsPresenter(
 
     override fun onComplete() {
         this.view.hideProgress()
+    }
+
+    override fun onDestroy() {
+        this.dataSource.job?.cancel()
     }
 
     // Convert SignApiEntity to Sign

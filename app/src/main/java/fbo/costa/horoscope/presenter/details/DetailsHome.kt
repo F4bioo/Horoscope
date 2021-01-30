@@ -14,5 +14,7 @@ interface DetailsHome {
 
         fun onComplete()
 
+        fun onDestroy()
+
     }
 }

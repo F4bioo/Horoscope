@@ -26,7 +26,7 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
     }
 
     override fun onInject() {
-        val dataSource = DataSource(this)
+        val dataSource = DataSource(applicationContext)
         presenter = DetailsPresenter(this, dataSource)
         getExtras()
         tryAgain()
@@ -68,6 +68,11 @@ class DetailsActivity : AbstractActivity(), ViewHome.View {
                 }
             }
         }
+    }
+
+    override fun onDestroy() {
+        presenter.onDestroy()
+        super.onDestroy()
     }
 
     private fun getExtras() {
