@@ -6,5 +6,5 @@
   - API Rest com Retrofit.
   - api https://github.com/andrechavesg/babi-api-horoscopo
 
-<img src="https://github.com/F4bioo/Horoscope/blob/master/screen_capture.png" width="30%"></img>
-<img src="https://github.com/F4bioo/Horoscope/blob/master/screen_capture2.png" width="30%"></img>
+<img src="screen_capture.png" width="30%"></img>
+<img src="screen_capture2.png" width="30%"></img>
